@@ -20,8 +20,8 @@ const populateForm = (form) => {
 
 
 const resetForm = (form) => {
-    form.reset();
-    localStorage.removeItem('feedback-form-state');
+  form.reset();
+  localStorage.removeItem('feedback-form-state');
 };
 
 const initForm = () => {
