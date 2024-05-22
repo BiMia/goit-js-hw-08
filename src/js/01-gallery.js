@@ -30,7 +30,7 @@ img.forEach((image) => {
     // library basicLightbox
 document.querySelectorAll('.gallery img').forEach(img => {
   img.addEventListener('click', function () {
-   const imageIndex = galleryItems.findIndex(item => item.preview === img.src);
+    const imageIndex = galleryItems.findIndex(item => item.preview === img.src);
     const instance = basicLightbox.create(`<img src=${galleryItems[imageIndex].original} width="800" height="600">`);
     instance.show();
   });
