@@ -34,12 +34,11 @@ const initForm = () => {
   form.addEventListener('submit', (event) => {
     event.preventDefault();
     const formData = new FormData(form);
-    console.log({
-      email: formData.get('email'),
-      message: formData.get('message')
-    });
-    resetForm(form);
+    console.log({      email: formData.get('email'),
+    message: formData.get('message')
   });
+  resetForm(form);
+});
 };
 
 initForm();
